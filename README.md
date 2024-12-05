@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAGP Africa</title>
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,208 +13,159 @@
 
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333333;
+            background-color: #fff;
+            color: #333;
             line-height: 1.6;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        /* Header */
         header {
-            background-color: #ff0000;
-            color: #ffffff;
-            padding: 1rem 0;
-        }
-
-        header .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 1rem;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 1.5rem;
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
 
-        header nav {
-            display: flex;
-            flex-wrap: wrap;
+        header p {
+            font-size: 1.2em;
         }
 
-        header nav a {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-left: 1rem;
-            transition: background-color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        header nav a:hover {
-            background-color: #ffcccc;
-        }
-
-        /* Sections */
         section {
-            padding: 2rem 1rem;
-        }
-
-        section .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
         }
 
         h2 {
-            color: #ff0000;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 2em;
+            color: red;
+            margin-bottom: 10px;
         }
 
-        ul {
-            list-style-type: disc;
-            margin-left: 2rem;
+        ul, ol {
+            margin-left: 20px;
         }
 
-        ul li {
-            margin-bottom: 0.5rem;
+        ul li, ol li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
 
-        /* Video Section */
-        .videos iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 350px;
-            margin: 1rem 0;
-            border: none;
-        }
-
-        /* Buttons */
-        .buttons {
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .buttons a {
-            display: inline-block;
-            background-color: #000000;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 5px;
-            margin: 0.5rem;
-            transition: background-color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .buttons a:hover {
-            background-color: #ffcccc;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        footer a {
-            color: #ffcccc;
+        a {
+            color: red;
             text-decoration: none;
         }
 
-        footer a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
-        /* Media Queries */
-        @media (max-width: 768px) {
-            header nav a {
-                margin-left: 0.5rem;
-                padding: 0.5rem;
-                font-size: 0.8rem;
-            }
+        .cta-button {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
 
-            h2 {
-                font-size: 1.25rem;
-            }
+        .cta-button:hover {
+            background-color: #d30000;
+        }
 
-            ul {
-                margin-left: 1.5rem;
-            }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
 
-            .buttons a {
-                padding: 0.5rem 1rem;
-                font-size: 0.8rem;
-            }
+        footer p {
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>RAGP Africa</h1>
-            <nav>
-                <a href="https://wa.link/jjria3" target="_blank">Register</a>
-                <a href="#details">More Info</a>
-                <a href="#videos">Watch Videos</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
-        </div>
+        <h1>RAGP Africa</h1>
+        <p>Empowering individuals to earn income through telecommunication services.</p>
     </header>
 
     <section class="intro">
-        <div class="container">
-            <h2>Welcome to RAGP Africa</h2>
-            <p>RAGP Africa is a revolutionary platform that empowers individuals to earn a steady income by leveraging the essential telecommunication services we all use daily. By simply connecting people to these services, you can create multiple streams of income and achieve financial freedom.</p>
-        </div>
+        <h2>About RAGP Africa</h2>
+        <p>RAGP Africa is a revolutionary platform that empowers individuals to earn a steady income by leveraging the essential telecommunication services we all use daily. By simply connecting people to these services, you can create multiple streams of income and achieve financial freedom.</p>
     </section>
 
-    <section class="products" id="details">
-        <div class="container">
-            <h2>Products and Services</h2>
-            <ul>
-                <li><strong>Airtime and Data Top-Up:</strong> Earn commissions whenever you or your network purchases airtime or data from any network (MTN, Airtel, Glo, 9Mobile, etc.).</li>
-                <li><strong>Electricity Bill Payments:</strong> Help others pay electricity bills conveniently while earning commissions.</li>
-                <li><strong>Cable TV Subscriptions:</strong> Simplify payments for DSTV, GOTV, and Startimes while earning.</li>
-                <li><strong>WAEC & NECO Result Pins:</strong> Sell pins for exam result checks and earn from every transaction.</li>
-                <li><strong>Internet Services:</strong> Enable data sharing and bulk purchases.</li>
-                <li><strong>E-commerce Opportunities:</strong> Engage in digital sales and product delivery.</li>
-                <li><strong>Other Telecom Services:</strong> Profitable opportunities in the growing telecom industry.</li>
-            </ul>
-        </div>
+    <section class="products-services">
+        <h2>Products and Services</h2>
+        <ul>
+            <li>Airtime and Data Top-Up: Earn commissions whenever you or your network purchases airtime or data from any network (MTN, Airtel, Glo, 9Mobile, etc.).</li>
+            <li>Electricity Bill Payments: Help others pay electricity bills conveniently while earning commissions.</li>
+            <li>Cable TV Subscriptions: Simplify payments for DSTV, GOTV, and Startimes while earning.</li>
+            <li>WAEC & NECO Result Pins: Sell pins for exam result checks and earn from every transaction.</li>
+            <li>Internet Services: Enable data sharing and bulk purchases.</li>
+            <li>E-commerce Opportunities: Engage in digital sales and product delivery.</li>
+            <li>Other Telecom Services: Profitable opportunities in the growing telecom industry.</li>
+        </ul>
     </section>
 
-    <section class="videos" id="videos">
-        <div class="container">
-            <h2>Watch These Videos</h2>
-            <iframe src="https://www.youtube.com/embed/ny1gVv2Ua6o" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/YUghmP1oY8M" allowfullscreen></iframe>
-        </div>
+    <section class="financial-potential">
+        <h2>Financial Potential</h2>
+        <p>RAGP Africa is more than a business; it’s a wealth-building system. Here’s how you can grow your income:</p>
+        <ul>
+            <li>Daily Commissions: Earn instant commissions on every transaction in your network.</li>
+            <li>Residual Income: Create a system where you earn passively as people in your network use telecom services.</li>
+            <li>Leverage: Build a team of users and earn from their activities, unlocking limitless financial growth.</li>
+            <li>Massive Market Size: The telecom industry is essential and growing daily, making this business sustainable and lucrative.</li>
+            <li>Scalability: Whether you’re a beginner or an experienced entrepreneur, RAGP offers growth opportunities that match your level.</li>
+        </ul>
     </section>
 
-    <div class="buttons">
-        <a href="https://wa.link/jjria3" target="_blank">Get Started</a>
-        <a href="#details">Learn More</a>
-        <a href="#videos">Watch Videos</a>
-    </div>
+    <section class="why-venture">
+        <h2>Why Venture into RAGP Africa?</h2>
+        <ol>
+            <li>Low Start-Up Cost: You don’t need millions to start your journey.</li>
+            <li>Guaranteed Demand: Telecom services are basic necessities.</li>
+            <li>No Inventory Hassles: The business is entirely digital—no need for physical storage.</li>
+            <li>Financial Freedom: You can earn daily and build a sustainable passive income.</li>
+            <li>Be Your Boss: Enjoy flexibility and work from anywhere.</li>
+        </ol>
+    </section>
 
-    <footer id="contact">
-        <div class="container">
-            <p>&copy; 2024 RAGP Africa. All rights reserved. | <a href="https://wa.link/jjria3">Contact Us</a></p>
-        </div>
+    <section class="how-to-get-started">
+        <h2>How to Get Started</h2>
+        <ol>
+            <li>Click the admin button here to get personalized assistance: <a href="https://wa.link/jjria3" target="_blank">Admin Assistance</a></li>
+            <li>Learn how the system works and start earning immediately.</li>
+            <li>Build your team and watch your income grow as your network expands.</li>
+        </ol>
+    </section>
+
+    <section class="cta">
+        <h2>Take the Leap Today!</h2>
+        <p>Start your journey toward financial independence with RAGP Africa—a proven system to generate daily income while helping others access essential services.</p>
+        <a href="https://wa.link/jjria3" class="cta-button">Register Now</a>
+    </section>
+
+    <section class="videos">
+        <h2>Learn More</h2>
+        <p>Watch the following videos for more details:</p>
+        <ul>
+            <li><a href="https://youtu.be/ny1gVv2Ua6o?si=Ou9BWIiuOWbUAzFz" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/YUghmP1oY8M?feature=shared" target="_blank">Video 2</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RAGP Africa. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-
