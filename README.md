@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAGP Africa</title>
     <style>
-        /* General Styles */
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -45,7 +45,7 @@
 
         header nav {
             display: flex;
-            flex-wrap: wrap; /* Ensure responsiveness */
+            flex-wrap: wrap;
         }
 
         header nav a {
@@ -198,8 +198,8 @@
     <section class="videos" id="videos">
         <div class="container">
             <h2>Watch These Videos</h2>
-            <iframe src="https://www.youtube.com/embed/ny1gVv2Ua6o?si=Ou9BWIiuOWbUAzFz" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/YUghmP1oY8M?feature=shared" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ny1gVv2Ua6o" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/YUghmP1oY8M" allowfullscreen></iframe>
         </div>
     </section>
 
