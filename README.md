@@ -1,4 +1,4 @@
-<!-- Save this as index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,12 @@
     <title>RAGP Africa</title>
     <style>
         /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,6 +19,7 @@
             background-color: #ffffff;
             color: #333333;
             line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
         /* Header */
@@ -23,18 +30,22 @@
         }
 
         header .container {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2rem;
+            padding: 0 1rem;
         }
 
         header h1 {
             margin: 0;
+            font-size: 1.5rem;
         }
 
         header nav {
             display: flex;
+            flex-wrap: wrap; /* Ensure responsiveness */
         }
 
         header nav a {
@@ -45,6 +56,7 @@
             border-radius: 5px;
             margin-left: 1rem;
             transition: background-color 0.3s ease;
+            font-size: 0.9rem;
         }
 
         header nav a:hover {
@@ -53,21 +65,27 @@
 
         /* Sections */
         section {
-            padding: 2rem 0;
+            padding: 2rem 1rem;
         }
 
         section .container {
-            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         h2 {
             color: #ff0000;
             margin-bottom: 1rem;
+            font-size: 1.5rem;
         }
 
         ul {
             list-style-type: disc;
             margin-left: 2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
         }
 
         /* Video Section */
@@ -94,6 +112,7 @@
             border-radius: 5px;
             margin: 0.5rem;
             transition: background-color 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .buttons a:hover {
@@ -107,6 +126,37 @@
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
+        }
+
+        footer a {
+            color: #ffcccc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header nav a {
+                margin-left: 0.5rem;
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            ul {
+                margin-left: 1.5rem;
+            }
+
+            .buttons a {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -161,7 +211,7 @@
 
     <footer id="contact">
         <div class="container">
-            <p>&copy; 2024 RAGP Africa. All rights reserved. | <a href="https://wa.link/jjria3" style="color: #ffcccc;">Contact Us</a></p>
+            <p>&copy; 2024 RAGP Africa. All rights reserved. | <a href="https://wa.link/jjria3">Contact Us</a></p>
         </div>
     </footer>
 </body>
